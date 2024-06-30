@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Syne',sans-serif;
+    scroll-behavior: smooth;
+}
+
+.img1{
+  animation: animate1 30s linear infinite;
+}
+
+@keyframes animate1 {
+  50%{
+    transform: rotate(360deg);
+  }
+}
+
+header nav a{
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+header nav a:hover{
+  opacity: 1;
+}
+
+header nav a.active{
+  border: 1px solid white;
+  opacity: 1;
+}
+
+.nav a{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+}
+
+.nav a.active{
+  background-color: white;
+  color: black;
+}
+
+
+
+@font-face {
+    font-family: 'Syne',sans-serif;
+    src: url(/Syne/Syne-VariableFont_wght.ttf);
+}
+
+.txt1{
+    background-image: linear-gradient(rgba(225,186,199,1),rgba(210,194,232,1));
+}
+
+#text1{
+    background: -webkit-linear-gradient(15deg , #e1bac5 20%, #cec4ef 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.btn {
+    width: 100%;
+    height: 7vh;
+    background: -webkit-linear-gradient(15deg , #e1bac5 20%, #cec4ef 80%);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .btn span {
+    font-size: 16px;
+    font-weight: bold;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
